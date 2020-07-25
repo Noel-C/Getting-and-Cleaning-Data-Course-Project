@@ -226,9 +226,9 @@ The following transformations were applied to the source data:
 1. The training and test sets, were merged to create one data set.
 1. The mean and standard deviation measurements for each variable were selected, and the rest were discarded.
 1. The activity identifiers (originally coded as integers between 1 and 6) were replaced with descriptive activity names (see [Identifiers](#identifiers) section).
-1. The variable names were replaced with descriptive variable names (e.g. `tBodyAcc-mean()-X` was expanded to `timeDomainBodyAccelerometerMeanX`), using the following set of rules:
+1. The variable names were replaced with descriptive variable names (e.g. `tBodyAcc-mean()-X` was expanded to `TimeDomainBodyAccelerometerMeanX`), using the following set of rules:
 	- Special characters (i.e. `(`, `)`, and `-`) were removed.
-	- The initial `f` and `t` were expanded to `frequencyDomain` and `timeDomain` respectively.
+	- The initial `f` and `t` were expanded to `FrequencyDomain` and `TimeDomain` respectively.
 	- `Acc`, `Gyro`, `Mag`, `Freq`, `mean`, and `std` were replaced with `Accelerometer`, `Gyroscope`, `Magnitude`, `Frequency`, `Mean`, and `StandardDeviation` respectively.
 	- Replaced (supposedly incorrect as per source's `features_info.txt` file) `BodyBody` with `Body`.
   	- The special character `(`. `)` was removed at the end of the names of each variable that contained it.
