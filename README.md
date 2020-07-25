@@ -28,6 +28,7 @@ The R script `run_analysis.R` can be used to create the data set. It retrieves t
 
 - Download and unzip source data, if it doesn't exist.
 - Read data.
+- Assigning data frames.
 - Merge the training and the test sets to create one data set.
 - Extract only the measurements on the Mean and Standard Deviation for each measurement.
 - Use descriptive activity names to name the activities in the data set.
