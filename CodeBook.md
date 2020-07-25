@@ -231,7 +231,7 @@ The following transformations were applied to the source data:
 	- The initial `f` and `t` were expanded to `frequencyDomain` and `timeDomain` respectively.
 	- `Acc`, `Gyro`, `Mag`, `Freq`, `mean`, and `std` were replaced with `Accelerometer`, `Gyroscope`, `Magnitude`, `Frequency`, `Mean`, and `StandardDeviation` respectively.
 	- Replaced (supposedly incorrect as per source's `features_info.txt` file) `BodyBody` with `Body`.
-  	- The special character (i.e. `(`. `)` was removed at the end of the names of each variable that contained it.
+  	- The special character `(`. `)` was removed at the end of the names of each variable that contained it.
 1. From the data set in step 4, the final data set was created with the average of each variable for each activity and each subject.
 
 The collection of the source data and the transformations listed above were implemented by the `run_analysis.R` R script (see `README.md` file for usage instructions).
