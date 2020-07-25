@@ -4,7 +4,8 @@ The data set that this code book pertains to is located in the `tidyHDA_Data.txt
 
 See the `README.md` file of this repository for background information on this data set.
 
-This codebook contains three sections: 1. [Data](#data) section - where the data set is described; 
+This codebook contains three sections: 
+1. [Data](#data) section - where the data set is described; 
 2. [Variables](#variables) section - where the variables are listed and described; and
 3. [Transformations](#transformations) section - where the transformations that were carried out to obtain the data set based on the source data are presented.
 
@@ -229,7 +230,7 @@ The following transformations were applied to the source data:
 	- The initial `f` and `t` were expanded to `frequencyDomain` and `timeDomain` respectively.
 	- `Acc`, `Gyro`, `Mag`, `Freq`, `mean`, and `std` were replaced with `Accelerometer`, `Gyroscope`, `Magnitude`, `Frequency`, `Mean`, and `StandardDeviation` respectively.
 	- Replaced (supposedly incorrect as per source's `features_info.txt` file) `BodyBody` with `Body`.
-  - The special character (i.e. `(`. `)` was removed at the end of the names of each variable that contained it.
+  	- The special character (i.e. `(`. `)` was removed at the end of the names of each variable that contained it.
 1. From the data set in step 4, the final data set was created with the average of each variable for each activity and each subject.
 
 The collection of the source data and the transformations listed above were implemented by the `run_analysis.R` R script (see `README.md` file for usage instructions).
